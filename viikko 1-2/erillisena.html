@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Kotisivu</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Tervetuloa Kotisivulleni</h1>
+    </header>
+    <nav>
+        <a href="#etusivu">Etusivu</a>
+        <a href="#tietoa">Tietoa</a>
+        <a href="#yhteystiedot">Yhteystiedot</a>
+    </nav>
+    <div class="container" id="etusivu">
+        <h2>Hei ja tervetuloa!</h2>
+        <p>Tämä on sivu, jossa harjoittelen koodaamista ja saatan muutaman pelisaavutus kuvan laittaa.</p>
+        <img src="inffivauhti.png" alt="vauhti">
+        <p>Tässä kuva kun vedin infernon 63minuuttiin.</p>
+        <img src="coxvauhti.png" alt="cox">
+        <p>Tässä kuva kun vedin cox raidin alle 17minuuttiin.</p>
+    </div>
+    <div class="container form-container" id="Tietoa">
+        <h2>Tietoa minusta</h2>
+        <p>Lepponen pari kymppinen äijä, joka tykkää pelailla ja opiskelee tieto- ja viestintätekniikkaa Centrialla.</p>
+
+
+    </div>
+
+    <div class="container form-container" id="yhteystiedot">
+        <h2>Yhteystiedot</h2>
+        <form onsubmit="submitForm(event)">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Lähetä</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2025 Kotisivusi Nimi. Kaikki oikeudet pidätetään.</p>
+    </footer>
+</body>
+
+</html>
